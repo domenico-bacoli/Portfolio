@@ -8,6 +8,7 @@ export default {
     data() {
         return {
             store,
+            myImg: "img/domenico.JPG",
         }; 
     },
 
@@ -56,7 +57,7 @@ export default {
                 <div class="about-me icon-card">
                     <router-link :to="{ name: 'about' }" class="about-me icon-card">
                         <div class="image">
-                            <img src="/img/domenico.webP" alt="about me image">
+                            <img :src="this.myImg" alt="about me image">
                         </div>
                     </router-link>
                     <span class="icon-detail">About me</span>
