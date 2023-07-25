@@ -16,7 +16,7 @@ export default {
     <h1>About Me</h1>
     <div class="domenico">
         <div class="domenico-image">
-            <img style="--d: .5s;" src="img/about-image.webP" alt="Domenico Image">
+            <img style="--d: .5s;" src="/img/about-image.webP" alt="Domenico Image">
             <!-- <a href="/img/Domenico-Bacoli-cv.pdf" download>Scarica il mio CV</a> -->
         </div>
         <div class="domenico-details">
