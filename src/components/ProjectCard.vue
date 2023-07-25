@@ -37,7 +37,7 @@ export default {
 <template>
     <div class="card-project">
         <div class="thumb">
-            <img :src="project.thumb" alt="anteprima progetto">
+            <img :src="project.thumb" alt="anteprima progetto" loading="lazy">
             <div class="overlay"></div>
             <div class="title">{{ project.title}}</div>
             <div class="button-more">
