@@ -9,6 +9,7 @@ export default {
         return {
             store,
             myImg: "img/domenico.JPG",
+            showForm: false,
         }; 
     },
 
@@ -35,7 +36,11 @@ export default {
             const cardContainerEl = document.querySelector(".card-container");
             myFormEl.classList.add('visible');
             cardContainerEl.style.opacity = "0.15"
-        }
+        },
+        toggleFormVisibility() {
+            const form = document.querySelector('.hidden-form');
+            form.classList.toggle('show-form');
+        },
     }
 }
 </script>
@@ -56,7 +61,7 @@ export default {
 
                     </p>
                     <div class="contact-me-button">
-                        <button class="contact-me" @click="contactForm()">Contact Me</button>
+                        <button class="contact-me" @click="toggleFormVisibility()">Contact Me</button>
                     </div>  
                 </div>
             </div>
