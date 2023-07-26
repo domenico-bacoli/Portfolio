@@ -23,7 +23,9 @@ export default {
   <AppHeader></AppHeader>
   <router-view></router-view>
   <div id="my-form">
-    <form name="contact-form" action="/" method="POST" data-netlify="true">
+    <form name="contact-form" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
         <p>
             <label>Your Name: <input type="text" name="name" /></label>
         </p>
