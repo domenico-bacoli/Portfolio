@@ -28,7 +28,15 @@ export default {
     //         });
     //     },  
     // },
-
+    
+    methods: {
+        contactForm() {
+            const myFormEl = document.getElementById("my-form");
+            const cardContainerEl = document.querySelector(".card-container");
+            myFormEl.classList.add('visible');
+            cardContainerEl.style.opacity = "0.15"
+        }
+    }
 }
 </script>
 
@@ -48,7 +56,7 @@ export default {
 
                     </p>
                     <div class="contact-me-button">
-                        <button class="contact-me">Contact Me</button>
+                        <button class="contact-me" @click="contactForm()">Contact Me</button>
                     </div>  
                 </div>
             </div>
@@ -103,10 +111,49 @@ export default {
         </div>
     </div>
 </div> -->
+
+<!-- form di prova per invio di messaggi su netlify -->
+<div id="my-form">
+    <form name="contact" data-netlify="true">
+        <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</div>
 </template>
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
+
+#my-form{
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 200px;
+    background-color: #f7f9fb;
+    background-image: linear-gradient(62deg, #f7f9fb 0%, #fbfbff 100%);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    transition: opacity 0.5s ease, top 0.5s ease;
+}
+
+#my-form.visible{
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 
 .card{
     border-radius: 20px;
@@ -126,6 +173,8 @@ export default {
         gap: 30px;
         margin-top: 80px;
         margin-bottom: 30px;
+        transition: opacity 0.3s ease;
+        z-index: 1;
 
         .about-me-card{
             display: flex;
