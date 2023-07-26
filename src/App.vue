@@ -1,7 +1,6 @@
 <script>
 import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
-import AppForm from './components/AppForm.vue';
 
 export default {
   name: 'App',
@@ -14,7 +13,6 @@ export default {
 
   components: {
     AppHeader,
-    AppForm
   },
 
 }
@@ -25,7 +23,7 @@ export default {
   <AppHeader></AppHeader>
   <router-view></router-view>
   <div id="my-form">
-    <form name="contact-form" method="POST" data-netlify="true">
+    <form name="contact-form" action="/" method="POST" data-netlify="true">
         <p>
             <label>Your Name: <input type="text" name="name" /></label>
         </p>
