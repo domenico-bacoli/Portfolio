@@ -231,11 +231,11 @@ export default {
 
 @media screen and (max-width: 767px) {
     .container{
-        padding-top: 300px;
+        padding-top: 380px;
         padding-bottom: 30px;
     h1{
         padding-bottom: 20px;
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     .domenico{
@@ -263,7 +263,7 @@ export default {
                 padding: 10px 20px;
 
                 .text{
-                    font-size: .7em;
+                    font-size: .8em;
                     padding: 20px 20px;
                 }
 
@@ -272,7 +272,7 @@ export default {
                     flex-flow: row wrap;
                     gap: 10px;
                     width: 100%;
-                    padding: 10px 40px;
+                    padding: 10px 20px;
 
                     .icon-card{
                         display: flex;
@@ -280,15 +280,15 @@ export default {
                         justify-content: center;
                         align-items: center;
                         width: calc(100% / 3 - (10px / 3 * 2));
-                        height: 60px;
+                        height: 70px;
                         border-radius: 16px;
 
                         i{
-                            font-size: 1.2em;
+                            font-size: 1.6em;
                         }
 
                         span{
-                            font-size: .6em;
+                            font-size: .65em;
                             font-weight: 600;
                             padding-top: 4px;
                         }

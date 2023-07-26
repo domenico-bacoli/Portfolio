@@ -15,7 +15,7 @@ export default defineComponent({
 
   data: () => ({
     settings: {
-            itemsToShow: 1,
+            itemsToShow: 1.5,
             snapAlign: 'center',
         },
         breakpoints: {
@@ -193,26 +193,28 @@ export default defineComponent({
         .project-card{
             display: flex;
             justify-content: center;
-            padding: 0 12px;
+            padding: 0 20px 0 0;
 
             .button-more{
                 display: none;
             }
 
             .project-thumb{
-                width: 90%;
+                width: 100%;
                 height: 240px;
             }
         }
 
 .fa-solid.fa-chevron-right {
-        font-size: 30px;
-        padding-left: 70px;
+        display: none;
+        // font-size: 30px;
+        // padding-left: 120px;
     }
 
     .fa-solid.fa-chevron-left {
-        font-size: 30px;
-        padding-right: 70px;
+        display: none;
+        // font-size: 30px;
+        // padding-right: 120px;
     }
 
 }

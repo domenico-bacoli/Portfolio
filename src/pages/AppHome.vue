@@ -180,6 +180,7 @@ export default {
                             border-radius: 20px;
                             font-weight: 600;
                             padding: 8px 24px;
+                            color: $text-color;
                         }
                     }
                 }
@@ -303,6 +304,7 @@ export default {
                     padding: 4px 20px;
                     font-weight: 600;
                     transition: all 0.4s ease;
+                    color: $text-color;
 
                     &:hover{
                         transform: scale(1.1);
@@ -315,6 +317,7 @@ export default {
 
 a{
     text-decoration: none;
+    color: $text-color;
 }
 
 
@@ -324,7 +327,7 @@ a{
     .card-container{
         display: flex;
         flex-direction: column;
-        margin-top: 450px;
+        margin-top: 430px;
 
         .about-me-card{
             display: flex;
@@ -377,7 +380,7 @@ a{
     .projects-section{
         padding: 0 10px;
         .recent-projects{
-            padding: 30px 60px;
+            padding: 30px 20px;
 
             .projects-information{
                 display: flex;
@@ -386,7 +389,7 @@ a{
                 margin-bottom: 1.4em;
 
                 h2{
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                     margin: 0;
                 }
 

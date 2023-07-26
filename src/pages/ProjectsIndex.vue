@@ -89,7 +89,7 @@ export default {
         padding-right: 10px;
 
         h1{
-            padding: 20px 0;
+            padding: 10px 0;
             margin-left: 20px;
         }
     
