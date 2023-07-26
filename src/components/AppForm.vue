@@ -14,7 +14,7 @@ export default {
 <template>
 <!-- form di prova per invio di messaggi su netlify -->
 <div id="my-form">
-    <form name="contact-form" method="POST" data-netlify="true">
+    <form name="contact-form" action="/" method="POST" data-netlify="true">
         <p>
             <label>Your Name: <input type="text" name="name" /></label>
         </p>
