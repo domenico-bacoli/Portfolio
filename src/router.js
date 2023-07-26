@@ -25,7 +25,7 @@ const router = createRouter({
             name: 'about',
             component: AppAbout,
             meta: {
-                title: 'Chi sono'
+                title: 'About me'
             }
         },
         
@@ -34,7 +34,7 @@ const router = createRouter({
             name: 'projects.index',
             component: ProjectsIndex,
             meta: {
-                title: 'Progetti'
+                title: 'Projects'
             }
         },
 
