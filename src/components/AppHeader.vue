@@ -92,6 +92,7 @@ button{
     padding: 0;
     border: none;
     background-color: transparent;
+    color: $text-color;
 }
 .navbar-toggler{
     border: none;
@@ -130,6 +131,11 @@ nav{
   width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
 @media screen and ((min-width: 300px) and (max-width: 767px)) {
     .offcanvas-body{
         ul{
@@ -144,6 +150,7 @@ nav{
     }
     button{
         text-transform: uppercase;
+        color: $text-color;
     }
 }
 

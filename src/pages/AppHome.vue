@@ -65,19 +65,19 @@ export default {
 
                 <div class="instagram-card icon-card">
                     <div class="image">
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/domenicobacoli/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <span class="icon-detail">Instagram</span>
                 </div>
                 <div class="linkedin-card icon-card">
                     <div class="image">
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/domenico-bacoli-4299a3b0" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <span class="icon-detail">Linkedin</span>
                 </div>
                 <div class="github-card icon-card">
                     <div class="image">
-                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/domenico-bacoli" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <span class="icon-detail">Github</span>
                 </div>
