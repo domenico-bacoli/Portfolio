@@ -5,7 +5,6 @@ import AppHome from './pages/AppHome.vue';
 import AppAbout from './pages/AppAbout.vue';
 import ProjectsIndex from './pages/ProjectsIndex.vue';
 import ProjectShow from './pages/ProjectShow.vue';
-import AppForm from './pages/AppForm.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -47,20 +46,12 @@ const router = createRouter({
                 title: 'Progetto'
             }
         },
-        {
-            path: '/contact',
-            name: 'contact',
-            component: AppForm,
-            meta: {
-                title: 'Contact Form'
-            }
-        },
     ],
 });
 
 // funzione per modificare il titolo da visualizzare per ogni pagina
 router.beforeEach((to) => {
-    document.title = to.meta?.title ? 'Boolfolio - ' + to.meta.title : 'Boolfolio';
+    document.title = to.meta?.title ? 'Portfolio - ' + to.meta.title : 'Portfolio';
   });
   
 
