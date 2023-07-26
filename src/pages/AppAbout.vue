@@ -68,7 +68,7 @@ export default {
     </div>
     <!-- form di prova per invio di messaggi su netlify -->
     <div id="my-form">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" action="/" data-netlify="true">
             <p>
                 <label>Your Name: <input type="text" name="name" /></label>
             </p>
