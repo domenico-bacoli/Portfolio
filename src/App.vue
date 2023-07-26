@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 #my-form{
-    // opacity: 0;
+    opacity: 0;
     position: absolute;
     top: 100%;
     left: 50%;

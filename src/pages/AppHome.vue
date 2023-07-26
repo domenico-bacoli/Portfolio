@@ -290,8 +290,7 @@ export default {
         }   
     }
 
-    .projects-section{
-        display: none;
+    .projects-section{ 
         opacity: 0;
         animation: cardCarouselProjectReveal 0.5s forwards var(--d);
 
