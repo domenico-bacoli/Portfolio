@@ -17,24 +17,23 @@
     <title>Domenico Bacoli</title>
   </head>
   <body>
-    <div id="app">
-      <div id="my-form">
-        <form name="contact" netlify class="hidden-form">
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
-        </form>
-      </div>
+    <div id="my-form hidden-form">
+      <form name="contact" method="POST" data-netlify="true" hidden>
+          <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+              <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+              <button type="submit">Send</button>
+          </p>
+      </form>
     </div>
+    <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
 
   </body>

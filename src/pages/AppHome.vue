@@ -9,7 +9,6 @@ export default {
         return {
             store,
             myImg: "img/domenico.JPG",
-            showForm: false,
         }; 
     },
 
@@ -37,10 +36,6 @@ export default {
             myFormEl.classList.add('visible');
             cardContainerEl.style.opacity = "0.15"
         },
-        toggleFormVisibility() {
-            const form = document.querySelector('.hidden-form');
-            form.classList.toggle('show-form');
-        },
     }
 }
 </script>
@@ -61,7 +56,7 @@ export default {
 
                     </p>
                     <div class="contact-me-button">
-                        <button class="contact-me" @click="toggleFormVisibility()">Contact Me</button>
+                        <button class="contact-me">Contact Me</button>
                     </div>  
                 </div>
             </div>
@@ -125,7 +120,8 @@ export default {
 .card{
     border-radius: 20px;
     border: none;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    // box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
 }
 
 .container{
@@ -141,7 +137,6 @@ export default {
         margin-top: 80px;
         margin-bottom: 30px;
         transition: opacity 0.3s ease;
-        z-index: 1;
 
         .about-me-card{
             display: flex;
@@ -252,7 +247,7 @@ export default {
                     }
 
                     .fa-instagram, .fa-linkedin-in, .fa-github{
-                        transition: all 0.3s ease;
+                        transition: all 0.4s ease;
 
                         &:hover{
                             transform: scale(1.2);
@@ -261,18 +256,19 @@ export default {
                 }
 
                 .about-me{
-                    background-color: #50fe0040;
+                    background: #50fe0040;
                     box-shadow: 2px 2px 10px #25e40320;
+                
                     img{
                         width: 38px;
                         border-radius: 50%;
-                        object-fit: cover;
-                        transition: 0.3s ease;
-
+                        transition: 0.4s ease;
+                        
                         &:hover{
                             transform: scale(1.2);
                         }
                     }
+               
                 }
 
                 .instagram-card{
@@ -301,7 +297,8 @@ export default {
 
         .recent-projects{
             padding: 30px 100px;
-            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            // box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
             border-radius: 20px;
             background-color: #f7f9fb;
             background-image: linear-gradient(62deg, #f7f9fb 0%, #fbfbff 100%);
@@ -348,7 +345,7 @@ a{
         .about-me-card{
             display: flex;
             flex-direction: column;
-            padding: 0 10px;
+            padding: 0 4px;
 
             .left-side{
                 
@@ -384,13 +381,38 @@ a{
 
 
             .social-icon{
-                font-size: 2em;
+                font-size: 2.3em;
                 width: 100%;
-                padding: 20px 40px;
+                padding: 18px 18px;
 
-            }
+                .icon-card{
+                    .icon-detail{
+                        font-size: 0.35em;
+                        font-weight: 600;
+                        color: $text-color;
+                        padding-top: 2px;
+                    }
+                }
 
-        }   
+                .about-me{
+                
+                    img{
+                        width: 42px;
+                        border-radius: 50%;
+                        
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .icon-detail{
+                        padding-top: 10px;
+                    }
+               
+                }
+
+            }   
+        }
     }
 
     .projects-section{

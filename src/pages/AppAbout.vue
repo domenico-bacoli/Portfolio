@@ -116,7 +116,8 @@ export default {
                 width: 60%;
                 background-color: #f7f9fb;
                 background-image: linear-gradient(62deg, #f7f9fb 0%, #fbfbff 100%);
-                box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+                // box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+                box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
                 border-radius: 20px;
                 padding: 40px 60px;
 

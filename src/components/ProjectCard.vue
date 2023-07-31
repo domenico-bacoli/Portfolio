@@ -63,7 +63,8 @@ export default {
     flex-direction: column;
     align-items: center;
     width: calc(100% / 3 - (50px / 3 * 2));
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    // box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
