@@ -16,6 +16,8 @@ export default {
         CarouselProjects,
     },
 
+    emits: ['contactForm'],
+
     // with Backend API
     // created() {
     //     this.getProjects();
@@ -28,15 +30,6 @@ export default {
     //         });
     //     },  
     // },
-    
-    methods: {
-        contactForm() {
-            const myFormEl = document.getElementById("my-form");
-            const cardContainerEl = document.querySelector(".card-container");
-            myFormEl.classList.add('visible');
-            cardContainerEl.style.opacity = "0.15"
-        },
-    }
 }
 </script>
 
@@ -56,7 +49,7 @@ export default {
 
                     </p>
                     <div class="contact-me-button">
-                        <button class="contact-me">Contact Me</button>
+                        <button @click="$emit('contactForm')" class="contact-me">Contact Me</button>
                     </div>  
                 </div>
             </div>
