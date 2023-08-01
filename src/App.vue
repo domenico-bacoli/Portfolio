@@ -106,6 +106,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.container{
+  padding: 4px 0 0;
+}
 .alert{
   display: none;
   position: absolute;

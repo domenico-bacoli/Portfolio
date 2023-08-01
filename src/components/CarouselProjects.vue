@@ -15,7 +15,7 @@ export default defineComponent({
 
   data: () => ({
     settings: {
-            itemsToShow: 1.5,
+            itemsToShow: 2.3,
             snapAlign: 'center',
         },
         breakpoints: {
@@ -193,7 +193,7 @@ export default defineComponent({
         .project-card{
             display: flex;
             justify-content: center;
-            padding: 0 20px 0 0;
+            padding: 0 10px 0 0;
 
             .button-more{
                 display: none;

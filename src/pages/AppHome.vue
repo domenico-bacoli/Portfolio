@@ -329,7 +329,7 @@ a{
 
 @media screen and (max-width: 767px) {
     .container{
-
+        padding: 0 0;
     .card-container{
         display: flex;
         flex-direction: column;
@@ -338,7 +338,7 @@ a{
         .about-me-card{
             display: flex;
             flex-direction: column;
-            padding: 0 4px;
+            padding: 0 12px;
 
             .left-side{
                 
@@ -376,9 +376,10 @@ a{
             .social-icon{
                 font-size: 2.3em;
                 width: 100%;
-                padding: 18px 18px;
+                padding: 18px 28px;
 
                 .icon-card{
+                    
                     .icon-detail{
                         font-size: 0.35em;
                         font-weight: 600;
@@ -409,9 +410,9 @@ a{
     }
 
     .projects-section{
-        padding: 0 10px;
+        padding: 0 0 0 12px;
         .recent-projects{
-            padding: 30px 20px;
+            padding: 30px 0 30px 10px;
 
             .projects-information{
                 display: flex;
@@ -420,13 +421,15 @@ a{
                 margin-bottom: 1.4em;
 
                 h2{
-                    font-size: 0.9em;
+                    font-size: 1em;
                     margin: 0;
+                    padding-left: 20px;
                 }
 
                 button{
                     padding: 6px 18px;
-                    font-size: 0.8em;
+                    font-size: 0.9em;
+                    margin-right: 30px;
                 }
             }
         }
