@@ -114,10 +114,10 @@ export default {
             <router-link :to="{name: 'projects.index'}"><button><i class="fa-solid fa-angle-left"></i>View all</button></router-link>
         </div>
         <div class="project-container">
-            <div class="project-image">
+            <div style="--d: .4s;" class="project-image">
                 <img :src="this.project.thumb" alt="immagine progetto">
             </div>
-            <div class="project-details">
+            <div style="--d: .8s;" class="project-details">
                 <div class="project-title">
                     <h1>Project: <span>{{this.project.title}}</span></h1>
                 </div>
@@ -195,6 +195,8 @@ export default {
                 width: 700px;
                 box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
                 border-radius: 20px;
+                opacity: 0;
+                animation: ProjectImageReveal 0.4s forwards var(--d);
 
                     img{
                     width: 100%;
@@ -215,8 +217,11 @@ export default {
                 padding: 0 60px;
                 background-color: #f7f9fb;
                 background-image: linear-gradient(62deg, #f7f9fb 0%, #fbfbff 100%);
-                box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+                box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
                 color: $text-color;
+                opacity: 0;
+                animation: ProjectDetailsReveal 0.8s forwards var(--d);
+                
 
                 .project-title{
                     display: flex;
@@ -384,5 +389,24 @@ export default {
     }
 }
 
+@keyframes ProjectImageReveal {
+	from {
+		transform: translateY(80px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes ProjectDetailsReveal {
+	from {
+		transform: translateX(80px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
 
 </style>

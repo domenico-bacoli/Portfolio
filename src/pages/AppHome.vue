@@ -333,23 +333,24 @@ a{
     .card-container{
         display: flex;
         flex-direction: column;
-        margin-top: 430px;
+        gap: 20px;
+        margin-top: 350px;
 
         .about-me-card{
             display: flex;
             flex-direction: column;
+            gap: 20px;
             padding: 0 12px;
 
             .left-side{
-                
+                height: 200px;
                 .my-name{ 
                     opacity: 0;
                     animation: mobileCardMynameReveal 0.5s forwards var(--d);
 
                     .name{
                         h1{
-                          
-                            padding-top: 30px;
+                            margin-top: 0;
                             font-size: 1.7em;
                         } 
                     }
@@ -376,7 +377,8 @@ a{
             .social-icon{
                 font-size: 2.3em;
                 width: 100%;
-                padding: 18px 28px;
+                padding: 24px 54px;
+                height: 250px;
 
                 .icon-card{
                     
@@ -384,7 +386,7 @@ a{
                         font-size: 0.35em;
                         font-weight: 600;
                         color: $text-color;
-                        padding-top: 2px;
+                        padding-top: 0;
                     }
                 }
 
@@ -422,6 +424,7 @@ a{
 
                 h2{
                     font-size: 1em;
+                    font-weight: 600;
                     margin: 0;
                     padding-left: 20px;
                 }

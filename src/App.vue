@@ -100,14 +100,14 @@ export default {
       </form> 
     </div>
     <div class="alert alert-success" role="alert">
-        Messaggio Inviato!
+        Message Sent!
     </div> 
 
 </template>
 
 <style lang="scss" scoped>
 .container{
-  padding: 4px 0 0;
+  padding: 0 0;
 }
 .alert{
   display: none;
@@ -115,7 +115,11 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: none;
+  padding: 16px 40px;
 }
+
 #my-form{
   display: flex;
   flex-direction: column;
@@ -206,6 +210,66 @@ export default {
   z-index: 2;
 }
 
+@media screen and (max-width: 767px) {
+  #my-form{
+  
+  .form-text{
+
+    gap: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    
+    
+    input{
+      width: 260px;
+      height: 44px;
+    }
+
+    textarea{
+      width: 260px;
+      height: 80px;
+      resize: none;
+      border-radius: 16px;
+      border: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 29px 4px;
+      padding: 10px 20px;
+    }
+    .your-name, .your-email, .your-message, .submit-button{
+      opacity: 0;
+    }
+
+    .your-name, .your-email, .your-message{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  .submit-button{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding-top: 30px;
+
+      button{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+        font-size: 1.1em;
+      }
+    }
+
+}
+  #my-form.visible{
+  min-height: 70%;
+  width: 90%;
+  opacity: 1;
+  z-index: 2;
+}
+}
+
 
 
 @keyframes formTextReveal {
@@ -214,7 +278,6 @@ export default {
 	}
   to {
     opacity: 1;
-		transform: none;
 	}
 }
 

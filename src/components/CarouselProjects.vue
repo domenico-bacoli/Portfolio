@@ -75,7 +75,7 @@ export default defineComponent({
             <div class="carousel__item">
                 <div class="project-card">
                     <div class="project-thumb">
-                        <img :src="project.thumb" alt="project image"> 
+                        <router-link :to="{name: 'projects.show', params: {slug: project.slug}}"><img :src="project.thumb" alt="project image"></router-link> 
                     </div>
                     <div class="button-more">
                         <router-link :to="{name: 'projects.show', params: {slug: project.slug}}">More</router-link>
@@ -202,6 +202,15 @@ export default defineComponent({
             .project-thumb{
                 width: 100%;
                 height: 240px;
+            }
+
+            &:hover img{
+                opacity: unset;
+                transform: none;
+            }
+
+            &:hover .button-more{
+                opacity: unset;
             }
         }
 

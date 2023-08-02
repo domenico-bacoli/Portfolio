@@ -97,9 +97,9 @@ export default {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-            gap: 50px;
+            gap: 34px;
             overflow: auto;
-            padding: 20px 30px 50px;
+            padding: 20px 24px 50px;
         }
     }
 }

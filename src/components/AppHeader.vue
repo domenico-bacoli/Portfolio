@@ -61,7 +61,7 @@ export default {
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Domenico</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -87,6 +87,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
+
 
 button{
     padding: 0;
@@ -151,6 +152,10 @@ a{
     button{
         text-transform: uppercase;
         color: $text-color;
+    }
+
+    .nav-link::after{
+      display: none;
     }
 }
 
