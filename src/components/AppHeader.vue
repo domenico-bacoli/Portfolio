@@ -107,7 +107,7 @@ nav{
 
     .offcanvas-body{
         ul{
-            gap: 10px;
+            gap: 20px;
         }
     }
 }
@@ -138,17 +138,31 @@ a{
 }
 
 @media screen and ((min-width: 300px) and (max-width: 767px)) {
+  nav{
     .offcanvas-body{
+        display: flex;
+        align-items: center;
+
         ul{
-            text-align: center;
-            gap: 60px;
-            padding-top: 150px;
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 0.2ch;
-            color: $text-color;
+          display: flex;
+          align-items: center;
+          gap: 80px;
+          text-transform: uppercase;
+          padding-bottom: 30px;
+
+          li{
+            a{
+              button{
+                font-weight: 600;
+                letter-spacing: 0.35ch;
+                color: $text-color;
+                font-size: 1.4em;
+              }
+            }
+          }
         }
     }
+  }
     button{
         text-transform: uppercase;
         color: $text-color;
@@ -156,6 +170,10 @@ a{
 
     .nav-link::after{
       display: none;
+    }
+
+    .nav-link:hover::after{
+      width: 0;
     }
 }
 

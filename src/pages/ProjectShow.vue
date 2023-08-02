@@ -136,6 +136,11 @@ export default {
 
 <style lang="scss" scoped>
 @use '../scss/variables' as *;
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
     .loading{
         display: flex;
         justify-content: center;
