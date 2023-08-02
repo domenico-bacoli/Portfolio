@@ -137,7 +137,7 @@ a{
     color: $text-color;
 }
 
-@media screen and ((min-width: 300px) and (max-width: 767px)) {
+@media screen and (max-width: 767px) {
   nav{
     .offcanvas-body{
         display: flex;
