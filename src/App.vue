@@ -221,7 +221,6 @@ a{
 
 @media screen and (max-width: 767px) {
   #my-form{
-  
     .form-text{
 
       gap: 20px;
@@ -240,6 +239,11 @@ a{
       }
     }
   }
+
+  #my-form.visible{
+  width: 90%;
+  min-height: 500px;
+}
 }
 
 
