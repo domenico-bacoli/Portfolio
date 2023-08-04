@@ -79,7 +79,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    overflow-y: auto;
     max-width: 1300px;
 
     h1{
@@ -123,7 +122,6 @@ export default {
                 box-shadow: rgba(100, 100, 111, 0.23) 0px 7px 29px 0px;
                 border-radius: 20px;
                 padding: 40px 60px;
-
                 .text{
                     padding: 18px;
 
@@ -236,8 +234,9 @@ export default {
 
 @media screen and (max-width: 767px) {
     .container{
-        padding-top: 380px;
+        padding-top: 420px;
         padding-bottom: 30px;
+        overflow: auto;
     h1{
         padding-bottom: 20px;
         margin-left: 20px;
@@ -249,6 +248,7 @@ export default {
         justify-content: center;
         align-items: center;
         gap: 0;
+        
         // padding-top: 40px;
 
             .domenico-image{
