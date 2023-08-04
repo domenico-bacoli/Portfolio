@@ -107,6 +107,10 @@ export default {
 
 <style lang="scss" scoped>
 @use 'scss/variables' as *;
+
+button{
+  color: $text-color;
+}
  
 a{
     text-decoration: none;
@@ -152,7 +156,6 @@ a{
     gap: 24px;
     font-weight: 600;
     font-size: 1em;
-    
     
     input{
       width: 350px;
@@ -219,61 +222,24 @@ a{
 @media screen and (max-width: 767px) {
   #my-form{
   
-  .form-text{
+    .form-text{
 
-    gap: 20px;
-    font-weight: 600;
-    font-size: 1em;
-    
-    
-    input{
-      width: 260px;
-      height: 44px;
-    }
-
-    textarea{
-      width: 260px;
-      height: 80px;
-      resize: none;
-      border-radius: 16px;
-      border: none;
-      box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 29px 4px;
-      padding: 10px 20px;
-    }
-    .your-name, .your-email, .your-message, .submit-button{
-      opacity: 0;
-    }
-
-    .your-name, .your-email, .your-message{
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
-
-  .submit-button{
-      display: flex;
       gap: 20px;
-      justify-content: center;
-      padding-top: 30px;
+      font-weight: 600;
+      font-size: 1em;
+      
+      
+      input{
+        width: 260px;
+        height: 44px;
+      }
 
-      button{
-        width: 100px;
-        height: 40px;
-        border-radius: 20px;
-        border: none;
-        font-weight: 600;
-        font-size: 1.1em;
+      textarea{
+        width: 260px;
+        height: 80px;
       }
     }
-
-}
-  #my-form.visible{
-  min-height: 70%;
-  width: 90%;
-  opacity: 1;
-  z-index: 2;
-}
+  }
 }
 
 

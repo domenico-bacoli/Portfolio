@@ -326,7 +326,6 @@ a{
     color: $text-color;
 }
 
-
 @media screen and (max-width: 767px) {
     .container{
         padding: 0 0;
@@ -334,7 +333,7 @@ a{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 350px;
+        margin-top: 320px;
 
         .about-me-card{
             display: flex;

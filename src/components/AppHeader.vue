@@ -146,7 +146,7 @@ a{
         ul{
           display: flex;
           align-items: center;
-          gap: 80px;
+          gap: 60px;
           text-transform: uppercase;
           padding-bottom: 30px;
 
@@ -156,7 +156,7 @@ a{
                 font-weight: 600;
                 letter-spacing: 0.35ch;
                 color: $text-color;
-                font-size: 1.4em;
+                font-size: 1.6em;
               }
             }
           }

@@ -21,7 +21,10 @@ export default {
         </div>
         <div class="domenico-details">
             <p class="text">
-                <span style="--d: .5s;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et alias animi explicabo placeat necessitatibus deleniti sint, ab aut obcaecati distinctio, tempore vel minima repellat. Obcaecati possimus vitae iure fuga. Id!</span>
+                <span style="--d: .5s;">
+                    Hi, I'm Domenico, a passionate web developer with a fervent curiosity for the world of technology. Since I was young, I've had a strong attraction to the digital world and its ability to enhance our daily lives.
+                    I'm a perpetual student, always in search of new challenges and learning opportunities. My coding passion is fueled by a constant desire to keep up with the latest trends and technologies, ensuring I never stop learning something new.
+                </span>
             </p>
             <div class="skills">
                 <h4>Skills</h4>
@@ -80,7 +83,7 @@ export default {
     max-width: 1300px;
 
     h1{
-        padding-bottom: 20px;
+        padding: 20px 0;
         margin-left: 50px;
     }
 
@@ -122,9 +125,10 @@ export default {
                 padding: 40px 60px;
 
                 .text{
-                    padding: 20px;
+                    padding: 18px;
 
                     span{
+                        font-size: 1em;
                         display: block;
 	                    opacity: 0;
 	                    animation: reveal 0.5s forwards var(--d);

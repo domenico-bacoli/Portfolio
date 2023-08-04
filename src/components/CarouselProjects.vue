@@ -133,21 +133,12 @@ export default defineComponent({
                 }
             }
 
-            &:hover img{
-                opacity: 0.3;
-                transform: scale(1.1);
-            }
-
-            &:hover .button-more{
-                opacity: 1;
-            }
-
             .project-thumb{
                 width: 100%;
                 height: 200px;
                 border-radius: 24px;
-                overflow: hidden;
-                cursor: pointer;   
+                cursor: pointer;
+                overflow: hidden;   
             
                 img{
                     width: 100%;
@@ -156,6 +147,15 @@ export default defineComponent({
                     border-radius: 24px;
                     transition: all 0.3s ease;
                 }
+            }
+
+            &:hover img{
+                opacity: 0.3;
+                transform: scale(1.1);
+            }
+
+            &:hover .button-more{
+                opacity: 1;
             }
         }
 
