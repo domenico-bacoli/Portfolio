@@ -166,6 +166,7 @@ a{
             i{
                 padding-right: 10px;
                 transition: all 0.4s ease;
+                color: $text-color;
             }
 
             button{
@@ -175,6 +176,7 @@ a{
                 margin-bottom: 40px;
                 font-weight: 600;
                 transition: all 0.4s ease;
+                color: $text-color;
 
                 &:hover{
                     transform: scale(1.1);
