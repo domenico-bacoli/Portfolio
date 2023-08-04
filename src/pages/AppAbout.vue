@@ -234,10 +234,10 @@ export default {
 
 @media screen and (max-width: 767px) {
     .container{
-        padding-top: 420px;
-        padding-bottom: 30px;
+        padding: 400px 10px 30px 10px;
         overflow: auto;
     h1{
+        padding-top: 80px;
         padding-bottom: 20px;
         margin-left: 20px;
     }
