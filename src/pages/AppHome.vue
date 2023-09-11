@@ -329,11 +329,12 @@ a{
 @media screen and (max-width: 767px) {
     .container{
         padding: 0 0;
+        height: unset;
     .card-container{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 320px;
+        padding-bottom: 30px;
 
         .about-me-card{
             display: flex;

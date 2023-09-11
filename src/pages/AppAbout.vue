@@ -84,6 +84,7 @@ export default {
     h1{
         padding: 20px 0;
         margin-left: 50px;
+        margin-bottom: 0;
     }
 
     .domenico{
@@ -234,7 +235,8 @@ export default {
 
 @media screen and (max-width: 767px) {
     .container{
-        padding: 400px 10px 30px 10px;
+        height: unset;
+        padding: 0 10px 40px 10px;
         overflow: auto;
     h1{
         padding-top: 80px;

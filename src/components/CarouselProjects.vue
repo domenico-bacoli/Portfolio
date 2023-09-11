@@ -75,7 +75,7 @@ export default defineComponent({
             <div class="carousel__item">
                 <div class="project-card">
                     <div class="project-thumb">
-                        <router-link :to="{name: 'projects.show', params: {slug: project.slug}}"><img :src="project.thumb" alt="project image" loading="lazy"></router-link> 
+                        <router-link :to="{name: 'projects.show', params: {slug: project.slug}}"><img :src="project.thumb" alt="project image"></router-link> 
                     </div>
                     <div class="button-more">
                         <router-link :to="{name: 'projects.show', params: {slug: project.slug}}">More</router-link>

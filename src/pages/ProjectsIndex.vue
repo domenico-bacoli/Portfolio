@@ -53,11 +53,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding-top: 80px;
+    // padding-top: 80px;
     max-width: 1300px;
 
     h1{
-        padding: 20px 0;
+        padding: 100px 0 20px;
         margin-left: 50px;
     }
 
@@ -68,7 +68,7 @@ export default {
         gap: 50px;
         overflow: auto;
         scroll-behavior: smooth;
-        padding: 30px 100px 40px;
+        padding: 30px 80px 40px;
         opacity: 0;
         animation: cardProjectsReveal .6s forwards var(--d);
     }   
@@ -85,11 +85,12 @@ export default {
 
 @media screen and (max-width: 767px) {
     .container{
+        height: unset;
         padding-left: 10px;
         padding-right: 10px;
 
         h1{
-            padding: 10px 0;
+            padding: 80px 0 10px;
             margin-left: 20px;
         }
     
@@ -109,7 +110,7 @@ export default {
     .container{
         height: 100vh;
         max-width: 1000px;
-        padding-top: 80px;
+        // padding-top: 80px;
 
     .card-container{
         gap: 50px;

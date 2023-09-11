@@ -6,6 +6,7 @@ import AppAbout from './pages/AppAbout.vue';
 import ProjectsIndex from './pages/ProjectsIndex.vue';
 import ProjectShow from './pages/ProjectShow.vue';
 
+
 const router = createRouter({
     history: createWebHistory(),
 
@@ -43,13 +44,14 @@ const router = createRouter({
             name: 'projects.show',
             component: ProjectShow,
             meta: {
-                title: 'Progetto'
-            }
+                title: 'Project'
+            },
         },
     ],
 });
 
-// funzione per modificare il titolo da visualizzare per ogni pagina
+
+//funzione per modificare il titolo da visualizzare per ogni pagina
 router.beforeEach((to) => {
     document.title = to.meta?.title ? 'Portfolio - ' + to.meta.title : 'Portfolio';
   });
