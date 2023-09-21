@@ -5,6 +5,7 @@ import CarouselProjects from '../components/CarouselProjects.vue';
 
 export default {
     name: 'appHome',
+
     data() {
         return {
             store,
@@ -14,7 +15,7 @@ export default {
 
     components: {
         CarouselProjects,
-    },
+    },  
 
     emits: ['contactForm'],
 

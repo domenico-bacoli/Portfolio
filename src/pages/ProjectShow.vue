@@ -274,7 +274,9 @@ a{
 
 @media screen and (max-width: 767px) {
     .container{
-        padding: 300px 20px 0;
+        padding: 80px 20px 0;
+        height: unset;
+        
         .project-container{
             display: flex;
             flex-direction: column;
@@ -283,7 +285,7 @@ a{
             gap: 40px;
             padding-bottom: 30px;
             .project-image{
-                height: unset;
+                height: 260px;
                 width: 100%;
             }
 

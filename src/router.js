@@ -48,13 +48,14 @@ const router = createRouter({
             },
         },
     ],
+    scrollBehavior(to, from, savedPosition) {
+        return { top: 0 }; // Scrolla sempre all'inizio della pagina
+    },
 });
-
 
 //funzione per modificare il titolo da visualizzare per ogni pagina
 router.beforeEach((to) => {
     document.title = to.meta?.title ? 'Portfolio - ' + to.meta.title : 'Portfolio';
   });
-  
 
 export { router };
