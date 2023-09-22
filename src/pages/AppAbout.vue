@@ -6,8 +6,6 @@ export default {
             myImg: "img/about-image.png",
         }; 
     },
-
-
 }
 </script>
 
@@ -69,6 +67,7 @@ export default {
             </div>
         </div>
     </div>
+<AppFooter></AppFooter>
 
 </div>
 </template>

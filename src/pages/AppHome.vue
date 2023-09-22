@@ -415,7 +415,8 @@ a{
     .projects-section{
         padding: 0 0 0 12px;
         .recent-projects{
-            padding: 30px 0 30px 10px;
+            padding: 30px 0 30px 20px;
+            border-radius: 20px 0 0 20px;
 
             .projects-information{
                 display: flex;
